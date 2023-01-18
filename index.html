@@ -1,5 +1,5 @@
 <!--
-In this lesson, we'll learn how to use tables for layout
+Inline CSS - declaring CSS in the head
 -->
 
 <!DOCTYPE html>
@@ -8,19 +8,37 @@ In this lesson, we'll learn how to use tables for layout
 <head>
     <meta charset="UTF-8">
     <title>My Personal Site</title>
+
+    <!--Our first CSS implementation-->
+    <style>
+        /* We should declare the part we want to customize. In this case it's the body */
+        body {
+            /* Then we should declare which part we wanna change. In this case it's the background colour */
+            background-color: #EAF6F6;
+        }
+
+        hr {
+            border-style: none;
+            border-top-style: dotted;
+            border-color: grey;
+            border-width: 7px;
+            width: 5%;
+        }
+    </style>
 </head>
 
 <body>
-    <!--Adding image to the webpage from URL-->
+    <!--Adding image to the webpage from URL
     <img src="https://petapixel.com/assets/uploads/2022/08/fdfs19-800x533.jpg" width="200" height="150" alt="Nature">
 
     <br>
+    -->
 
     <!--using table for layout-->
     <table cellspacing="20">
         <tr>
             <td><!--Adding image to the webpage from local folder-->
-                <img src="HTML - Personal Site/images/My picture-modified.png" width="200" height="200" alt="Arvind's DP"></td>
+                <img src="..\HTML - Personal Site\images\My picture-modified.png" width="200" height="200" alt="Arvind's DP"></td>
             
                 <td><h1>Arvind</h1>
                 <p><em>Senior Support Analyst at <strong><a href="https://www.sdworx.co.uk/en-gb/mauritius">SD Worx</a></strong></em></p></td>
@@ -42,7 +60,7 @@ In this lesson, we'll learn how to use tables for layout
         <li>University of Mauritius (UoM)</li>
         <li>University of Technology of Mauritius (UTM)</li>
     </ul>
-    
+    <hr>
     <h3>Favorite food:</h3>
     <ol>    <!--ordered list-->
         <li><a href="https://www.indianhealthyrecipes.com/chicken-biryani-recipe/">Biryani</a></li> <!--links to outside websites-->
@@ -53,7 +71,7 @@ In this lesson, we'll learn how to use tables for layout
         <li><a href="https://www.bbcgoodfood.com/recipes/collection/indian-recipes">Indian cuisine</a></li>
         <li>and many more...</li>
     </ol>
-
+    <hr>
     <h3>Experience:</h3>
 
     <table border="1">
@@ -102,7 +120,7 @@ In this lesson, we'll learn how to use tables for layout
 
         </tfoot>
     </table>
-
+    <hr>
     <h3>Skills:</h3>
 
     <table border="2">
@@ -135,9 +153,9 @@ In this lesson, we'll learn how to use tables for layout
         </tr>
     </table>
 
-    <h4><a href="HTML - Personal Site/S2 - L19 - hobbies.html">My hobbies</a></h4>   <!--links to webpages of our own website-->
+    <h4><a href="S2 - L19 - hobbies.html">My hobbies</a></h4>   <!--links to webpages of our own website-->
 
-    <h4><a href="HTML - Personal Site/S2 - L19 - contact.html">Contact me!</a></h4>
+    <h4><a href="S2 - L19 - contact.html">Contact me!</a></h4>
     
 </body>
 
